@@ -1,5 +1,7 @@
-#ifndef __FUNC_ 
-#define __FUNC_
+#ifndef __FUNC_H_
+#define __FUNC_H_
+
+void GotoXY(int x, int y);
 
 void title(void); //게임시작화면 
 void reset(void); //게임판 초기화 

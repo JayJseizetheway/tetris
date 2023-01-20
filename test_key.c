@@ -42,6 +42,7 @@ int main(void)
 {
     setlocale(LC_ALL, "");
 	initscr();
+    
     while (1)
     {
         // MoveMaze();

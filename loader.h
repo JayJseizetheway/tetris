@@ -1,7 +1,5 @@
-#ifndef __LOADER_ 
-#define __LOADER_ 
-#include <stdio.h> 
-#include "data.h" 
+#ifndef __LOADER_H_
+#define __LOADER_H_ 
 
 #define MAX_LEN 100
 void load_block_data(char * data_path); 

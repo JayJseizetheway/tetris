@@ -1,3 +1,5 @@
+#include <stdio.h> 
+#include "data.h" 
 #include "loader.h"
 
 void load_block_data(char * data_path) {
@@ -42,13 +44,15 @@ void load_mainboard_data(char * data_path) {
     FILE * fp = fopen(data_path, "r"); 
     char buffer[MAX_LEN];
 
+    printf("main org %p\n", main_org); 
+
     for (int i = 0; i < MAIN_Y; i++) {
         fgets(buffer, MAX_LEN, fp); 
-
+    
         for (int j = 0; j < MAIN_X; j++) {
-            main_org[i][j] = buffer[j]; 
+            main_org[i][j] = buffer[j];
         }
     }
-    
+
     fclose(fp); 
 }
